@@ -15,13 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="HgX-AN-8cD">
-                                <rect key="frame" x="10" y="290" width="394" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="HgX-AN-8cD">
+                                <rect key="frame" x="10" y="290" width="394" height="273.5"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odl-02-ps8">
-                                <rect key="frame" x="10" y="719" width="394" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odl-02-ps8">
+                                <rect key="frame" x="10" y="739.5" width="394" height="76"/>
                                 <color key="backgroundColor" red="0.0018699038773775101" green="0.049614258110523224" blue="0.10196752101182938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="41"/>
                                 <state key="normal" title="Ask">
@@ -31,6 +29,13 @@
                                     <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4d-Fh-fIv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbB-4h-Hp9">
+                                <rect key="frame" x="10" y="110" width="394" height="64"/>
+                                <color key="backgroundColor" red="0.0028951172719999998" green="0.064813040200000005" blue="0.13334175940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="41"/>
+                                <color key="textColor" red="0.12669351700000001" green="0.66164833310000004" blue="0.87454229589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I1-rQ-tcZ">
                                 <rect key="frame" x="10" y="111" width="394" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,6 +46,17 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="odl-02-ps8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="406-Y9-c6g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HgX-AN-8cD" secondAttribute="trailing" constant="10" id="9dc-FQ-qAg"/>
+                            <constraint firstItem="HgX-AN-8cD" firstAttribute="top" secondItem="jbB-4h-Hp9" secondAttribute="bottom" constant="116" id="OFr-Bm-M2n"/>
+                            <constraint firstItem="jbB-4h-Hp9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="PAJ-Hy-ikN"/>
+                            <constraint firstItem="odl-02-ps8" firstAttribute="top" secondItem="HgX-AN-8cD" secondAttribute="bottom" constant="176" id="Qln-sz-oHA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="odl-02-ps8" secondAttribute="trailing" constant="10" id="SAo-kN-5fX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jbB-4h-Hp9" secondAttribute="trailing" constant="10" id="XCw-F1-1Z9"/>
+                            <constraint firstItem="jbB-4h-Hp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qh5-IV-32v"/>
+                            <constraint firstItem="HgX-AN-8cD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="s2f-Ic-0t1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
